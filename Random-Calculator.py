@@ -1,5 +1,5 @@
 x=int(input("Enter first number: "))
 y=int(input("Enter second number: "))
 z=int(input("Enter third number: "))
-result=((4*x)**4)+((3*y)**3)+(9*z)+(6*3.14)
+result=(4*(x**4))+(3*(y**3))+(9*z)+(6*3.14)
 print("Your result after calculating, is:",result,".")
