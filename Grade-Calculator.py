@@ -1,9 +1,9 @@
 eng=float(input("Enter marks for English: "))
-met=float(input("Enter marks for Mathematics: "))
+mat=float(input("Enter marks for Mathematics: "))
 phy=float(input("Enter marks for Physics: "))
 che=float(input("Enter marks for Chemistry: "))
 com=float(input("Enter marks for Computers: "))
-tot=eng+met+phy+che+com
+tot=eng+mat+phy+che+com
 percent=(tot/500)*100
 if 91<=percent<=100:
     print("Your percentage is ", percent, ". Your grade is A. You've passed!")
