@@ -1,10 +1,10 @@
-eng=input("Enter marks for English: ")
-met=input("Enter marks for Mathematics: ")
-phy=input("Enter marks for Physics: ")
-che=input("Enter marks for Chemistry: ")
-com=input("Enter marks for Computers: ")
-total=float(eng)+float(met)+float(phy)+float(che)+float(com)
-percent=(int(total)/500)*100
+eng=float(input("Enter marks for English: "))
+met=float(input("Enter marks for Mathematics: "))
+phy=float(input("Enter marks for Physics: "))
+che=float(input("Enter marks for Chemistry: "))
+com=float(input("Enter marks for Computers: "))
+total=eng+met+phy+che+com
+percent=(total/500)*100
 if percent>=91 and percent<=100:
     print("Your percentage is ", percent, ". Your grade is A. You've passed!")
 elif percent>=81 and percent<=90:
