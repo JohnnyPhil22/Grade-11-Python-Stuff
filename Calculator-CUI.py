@@ -1,5 +1,5 @@
-n1 = int(input("Enter first number: "))
-n2 = int(input("Enter second number: "))
+n1 = float(input("Enter first number: "))
+n2 = float(input("Enter second number: "))
 print("Operators:\n1. + for addition\n2. - for subtraction\n3. * for multiplication\n4. / for division\n5. // for integer division\n6. % for modulus\n7. ** for exponentiation")
 op = input("Enter an arithmetic operator (1 to 7): ")
 if op=="1":
