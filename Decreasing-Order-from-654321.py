@@ -1,4 +1,4 @@
 i=6
-while 0<i<7:
+while i>0:
     print(i)
     i-=1
