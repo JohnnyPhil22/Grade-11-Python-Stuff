@@ -79,3 +79,19 @@ for i in range(1,n+1):
         fact*=j
     s+=i/fact
 print("Sum of series:",s)
+
+# s=1!+2!+3!+...+n!
+n=int(input("Enter number: "))
+s,fact=0,1
+for i in range(1,n+1):
+    fact*=i
+    s+=fact
+print("Sum of series:",s)
+
+# s=1/1!+2/2!+3/3!+...+n/n!
+n=int(input("Enter number: "))
+s,fact=0,1
+for i in range(1,n+1):
+    fact*=i
+    s+=i/fact
+print("Sum of series:",s)
