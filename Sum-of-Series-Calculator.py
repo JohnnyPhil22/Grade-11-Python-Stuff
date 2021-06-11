@@ -95,3 +95,22 @@ for i in range(1,n+1):
     fact*=i
     s+=i/fact
 print("Sum of series:",s)
+
+# s=1!+2^2/2!+...+n^n/n!
+## Simple for loop
+n=int(input("Enter number: "))
+s,fact,p=0,1,1
+for i in range(1,n+1):
+    p=i**i
+    fact*=i
+    s+=p/fact
+print("Sum of series:",s)
+## Nested for loop
+n=int(input("Enter number: "))
+s=0 
+for i in range(1,n+1):
+  fact=1
+  for j in range(1,i+1):
+      fact*=j
+  s=s+i**i/fact
+print("Sum of series:",s)
