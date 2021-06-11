@@ -114,3 +114,18 @@ for i in range(1,n+1):
       fact*=j
   s=s+i**i/fact
 print("Sum of series:",s)
+
+# s=1-2*3/3!+3*4/4!-4*5/5!+...+(n-1)n/n!
+n=int(input("Enter number: "))
+s,f=0,0
+for i in range(2,n+1):
+    fact=1
+    for j in range(2,i+1):
+        fact*=j
+    if f==0:
+        s+=((i-1)*i)/fact
+        f=1
+    else:
+        s-=((i-1)*i)/fact
+        f=0
+print("Sum of series:",s)
