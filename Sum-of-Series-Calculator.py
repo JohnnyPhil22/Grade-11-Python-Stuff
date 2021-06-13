@@ -129,3 +129,12 @@ for i in range(2,n+1):
         s-=((i-1)*i)/fact
         f=0
 print("Sum of series:",s)
+
+# s=1+(1+2)+(1+2+3)+(1+2+3+n)+...+(1+2+3+4+...+n)
+n=int(input("Enter number: "))
+s,s2=0,0
+for i in range(1,n+1):
+  for j in range(i,i+1):
+    s2+=i
+  s+=s2
+print("Sum of series:",s)
