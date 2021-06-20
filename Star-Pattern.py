@@ -93,12 +93,12 @@ for i in range(1,7):
         print(' ',end='')
     while k!=2*i-1:
         if k==0 or k==2*i-2:
-            print('*', end='')
+            print('*',end='')
         else:
-            print(' ', end='')
+            print(' ',end='')
         k+=1
     k=0
     print('')
 for i in range(0, 11):
-    print('*', end='')
+    print('*',end='')
 print('')
