@@ -51,3 +51,11 @@ for i in range(0,4):
  ABCBA
 ABCDCBA
 '''
+for i in range(0,4):
+    for sp in range(i,6):
+        print(' ',end='')
+    for d in range(65,65+i):
+        print(chr(d),end='')
+    for a in range(65+i,64,-1):
+        print(chr(a),end='')
+    print('')
