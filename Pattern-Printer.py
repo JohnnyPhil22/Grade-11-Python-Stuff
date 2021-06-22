@@ -71,6 +71,6 @@ for i in range(0,5):
     for sp in range(i,6):
         print(' ',end='')
     for j in range(0,i+1):
-        print(chr(n), end=" ")
+        print(chr(n),end=' ')
         n+=1
     print('')
