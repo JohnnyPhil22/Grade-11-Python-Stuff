@@ -59,3 +59,10 @@ for i in range(0,4):
     for a in range(65+i,64,-1):
         print(chr(a),end='')
     print('')
+'''
+    A
+   B C
+  D E F
+ G H I J
+K L M N O
+'''
