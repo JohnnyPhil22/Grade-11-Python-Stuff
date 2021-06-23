@@ -34,5 +34,5 @@ while n>0:
     if ld<r:
         ld=r
     n//=10
-print("The Largest Digit is :",ld)
+print("Largest digit:",ld)
 # Number of odd digits
