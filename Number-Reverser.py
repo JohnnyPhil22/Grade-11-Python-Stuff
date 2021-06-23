@@ -1,4 +1,7 @@
-number=int(input("Enter your number: "))
-digit1 = number//10
-digit2 = number%10
-print("Your number, but reversed, is ",digit2,digit1,".",sep='')
+n=int(input("Enter number: "))
+r=0
+while n>0:
+    d=n%10
+    r=r*10+d
+    n//=10
+print("Reversed number:",r)
