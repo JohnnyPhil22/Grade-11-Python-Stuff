@@ -27,5 +27,12 @@ while n>0:
     s+=d
 print("Sum of digits:",s)
 # Largest digit
-
+n=int(input("Enter number: "))
+ld=0
+while n>0:
+    r=n%10
+    if ld<r:
+        ld=r
+    n//=10
+print("The Largest Digit is :",ld)
 # Number of odd digits
