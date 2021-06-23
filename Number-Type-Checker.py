@@ -10,7 +10,7 @@ if r==dn:
     print("Number is a palindrome.")
 else:
     print("Number is not a palindrome.")
-# Armstrong checker
+# Armstrong number checker
 n=int(input("Enter number: "))
 s,dn=0,n
 while dn>0:
