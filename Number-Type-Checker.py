@@ -2,11 +2,11 @@
 
 # Armstrong checker
 n=int(input("Enter number: "))
-s,temp=0,n
-while temp>0:
-    d=temp%10
+s,dn=0,n
+while dn>0:
+    d=dn%10
     s+=d**3
-    temp//=10
+    dn//=10
 print(s)
 if s==n:
     print("It is an Armstrong number.")
