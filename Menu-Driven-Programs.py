@@ -21,4 +21,4 @@ while opt in 'yY':
         print("Perimeter of rectangle:",(2*(l+b)))
     else:
         print("Select from options 1 through 4.")
-    opt=("Press y to continue: ")
+    opt=input("Press y to continue: ")
