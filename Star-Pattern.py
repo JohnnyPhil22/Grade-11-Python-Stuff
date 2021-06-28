@@ -113,10 +113,10 @@ print('')
 * * * * * * * * 
 '''
 i=0
-while(i<8):
+while i<8:
     j=0
-    while(j<8):
-        if(i==0 or i==7 or j==0 or j==7):
+    while j<8:
+        if i==0 or i==7 or j==0 or j==7:
             print('*',end=' ')
         else:
             print(' ',end=' ')
@@ -134,10 +134,10 @@ while(i<8):
 * * * * * * * * * * * * * * * * 
 '''
 i=0
-while(i<8):
+while i<8:
     j=0
-    while(j<16):
-        if(i==0 or i==7 or j==0 or j==15):
+    while j<16:
+        if i==0 or i==7 or j==0 or j==15:
             print('*',end=' ')
         else:
             print(' ',end=' ')
