@@ -102,3 +102,45 @@ for i in range(1,7):
 for i in range(0, 11):
     print('*',end='')
 print('')
+'''
+* * * * * * * * 
+*             * 
+*             * 
+*             * 
+*             * 
+*             * 
+*             * 
+* * * * * * * * 
+'''
+i=0
+while(i<8):
+    j=0
+    while(j<8):
+        if(i==0 or i==7 or j==0 or j==7):
+            print('*',end=' ')
+        else:
+            print(' ',end=' ')
+        j+=1
+    i+=1
+    print('')
+'''
+* * * * * * * * * * * * * * * * 
+*                             * 
+*                             * 
+*                             * 
+*                             * 
+*                             * 
+*                             * 
+* * * * * * * * * * * * * * * * 
+'''
+i=0
+while(i<8):
+    j=0
+    while(j<16):
+        if(i==0 or i==7 or j==0 or j==15):
+            print('*',end=' ')
+        else:
+            print(' ',end=' ')
+        j+=1
+    i+=1
+    print('')
