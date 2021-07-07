@@ -49,3 +49,19 @@ for i in range(4):
     for j in range(4-i):
         print("*",end="")
     print('')
+'''
+1
+3 2
+6 5 4
+10 9 8 7
+'''
+start,stop=1,2
+current_num=stop
+for r in range(2,6):
+    for c in range(start,stop):
+        current_num-=1
+        print(current_num,end=' ')
+    print("")
+    start=stop
+    stop+=r
+    current_num=stop
