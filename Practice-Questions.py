@@ -97,3 +97,11 @@ for i in range(1,8,2):
     for j in range(0,i):
         print('* ',end='')
     print('')
+'''
+1 2 3 4 5 6
+2 3 4 5 6
+3 4 5 6
+4 5 6
+5 6
+6
+'''
