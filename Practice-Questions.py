@@ -65,3 +65,18 @@ for r in range(2,6):
     start=stop
     stop+=r
     current_num=stop
+'''
+1
+2 6
+3 7 10
+4 8 11 13
+5 9 12 14 15
+'''
+for i in range(0,5):
+    n=i+1
+    inc=4
+    for j in range(0,i+1):
+        print(n,end=' ')
+        n+=inc
+        inc-=1
+    print('')
