@@ -105,7 +105,10 @@ for i in range(1,8,2):
 5 6
 6
 '''
-
+for i in range(0,6):
+    for j in range(1,7-i,1):
+        print(j,end=' ')
+    print('')
 '''
         0
       1 0 1
