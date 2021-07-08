@@ -158,3 +158,26 @@ for i in range(6,-3,-1):
             else:
                 print("#",end='')
     print('')
+'''
+ ***
+*   *
+*   *
+*****
+*   *
+*   *
+*   *
+'''
+for r in range(0,7):
+    for c in range(0,7):
+        if (((c==1 or c==5) and r!=0) or ((r==0 or r==3) and (c>1 and c<5))):
+            print('*',end='')
+        else:      
+            print(' ',end='')
+    print('')
+# Highest Common Factor of two given numbers:
+n1=int(input("Enter smaller number: "))
+n2=int(input("Enter larger number: "))
+for i in range(1,n1+1):
+    if n1%i==0 and n2%i==0:
+        hcf=i
+print("Highest Common Factor:",hcf)
