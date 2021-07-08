@@ -105,3 +105,19 @@ for i in range(1,8,2):
 5 6
 6
 '''
+
+'''
+        0
+      1 0 1
+    2 1 0 1 2
+  3 2 1 0 1 2 3
+4 3 2 1 0 1 2 3 4
+'''
+for i in range(0,5):
+    for sp in range(6,i,-1):
+        print(' ',end=' ')
+    for d in range(i,-1,-1):
+        print(d,end=' ')
+    for a in range(1,i+1):
+        print(a,end=' ')
+    print('')
