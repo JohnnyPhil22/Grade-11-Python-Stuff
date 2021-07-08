@@ -191,4 +191,89 @@ for i in range(1,51):
         print("Buzz")
     else:
         print(i)
-# Vowel or consonant letter
+# Vowel or consonant detector
+l=str(input("Enter letter: "))
+if 'A'<=l<='Z' or 'a'<=l<='z':
+    if ord(l)==65 or ord(l)==69 or ord(l)==73 or ord(l)==79 or ord(l)==85 or ord(l)==97 or ord(l)==101 or ord(l)==105 or ord(l)==111 or ord(l)==117:
+        print("Letter is a vowel.")
+    else:
+        print("Letter is a consonant.")
+else:
+    print("Enter only a letter.")
+# Triangle determiner
+a = float(input("Enter length of first side: "))
+b = float(input("Enter length of second side: "))
+c = float(input("Enter length of third side: "))
+if a<=0 or b<=0 or c<=0:
+    print("Please enter a value greater than 0.")
+elif a==b==c:
+    print("The triangle is equilateral.")
+else:
+    if a==b or b==c or c==a:
+        print("The triangle is isosceles.")
+    else:
+        print("The triangle is scalene.")
+# Astrological sign
+d = int(input("Input birthday: "))
+m = input("Input month of birth: ")
+if m=='December':
+    if d<22:
+        a='Sagittarius'
+    else:
+        a='Capricorn'
+elif m == 'january':
+    if d<20:
+        a='Capricorn'
+    else:
+        a='Aquarius'
+elif m=='February':
+    if d<19:
+        a='Aquarius'
+    else:
+        a='Pisces'
+elif m=='March':
+    if d<21:
+        a='Pisces'
+    else:
+        a='Aries'
+elif m=='April':
+    if d<20:
+        a='Aries'
+    else:
+        a='Taurus'
+elif m=='May':
+    if d<21:
+        a='Taurus'
+    else:
+        a='Gemini'
+elif m=='June':
+    if d<21:
+        a='Gemini'
+    else:
+        a='Cancer'
+elif m == 'July':
+    if d<23:
+        a='Cancer'
+    else:
+        a='Leo'
+elif m=='August':
+    if d<23:
+        a='Leo'
+    else:
+        a='Virgo'
+elif m=='September':
+    if d<23:
+        a='Virgo'
+    else:
+        a='Libra'
+elif m=='October':
+    if d<23:
+        a='Libra'
+    else:
+        a='Scorpio'
+elif m=='November':
+    if d<22:
+        a='Scorpio'
+    else:
+        a='Sagittarius'
+print("Astrological Sign:",a)
