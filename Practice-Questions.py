@@ -145,3 +145,16 @@ for i in range(71,64,-1):
 *#
 #
 '''
+for i in range(6,-3,-1):
+    for j in range(1,i+4):
+        if i%2==0:
+            if j%2==0:
+                print("*",end='')
+            else:
+                print("#",end='')
+        else:
+            if j%2!=0:
+                print("*",end='')
+            else:
+                print("#",end='')
+    print('')
