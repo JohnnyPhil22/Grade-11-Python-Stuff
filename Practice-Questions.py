@@ -121,3 +121,27 @@ for i in range(0,5):
     for a in range(1,i+1):
         print(a,end=' ')
     print('')
+'''
+ABCDEFGFEDCBA
+ABCDEFFEDCBA
+ABCDEEDCBA
+ABCDDCBA
+ABCCBA
+ABBA
+AA
+'''
+for i in range(71,64,-1):
+    for j in range(65,i+1):
+        print(chr(j),end='')
+    for k in range(i,64,-1):
+        print(chr(k),end='')
+    print('')
+'''
+#*#*#*#*#
+*#*#*#*#
+#*#*#*
+*#*#*
+#*#
+*#
+#
+'''
