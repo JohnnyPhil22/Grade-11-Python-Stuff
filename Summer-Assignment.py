@@ -215,3 +215,6 @@ else:
         print("The solutions are",root,"and",root,".")
     else:
         print("The solutions are complex and imaginary.")
+# Convert decimal to binary
+n=int(input("Enter number: "))
+print(int(bin(n)[2:]))
