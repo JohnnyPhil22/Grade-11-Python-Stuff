@@ -45,13 +45,6 @@ for i in range(0,len(s)):
         count+=1
 print('Number of characters appear:',count)
 
-# Input string and check if palindrome.
-s=input("Enter a string: ")
-if s==s[::-1]:
-    print("It is a palindrome.")
-else:
-    print("It is not a palindrome.")
-
 # Check if 0 is in string and print number of times 0 appears
 int=input("Enter a number: ")
 str(int)
@@ -61,3 +54,19 @@ for i in range(len(int)):
         count+=1
 print('0' in int)
 print("Number of times 0 appears:",count)
+
+# Input string and check if palindrome.
+s=input("Enter a string: ")
+if s==s[::-1]:
+    print("It is a palindrome.")
+else:
+    print("It is not a palindrome.")
+    
+# Input 2 strings, if 2nd string in 1st, print first 4 chars of 2nd string with 'REVERSE' as well
+str1=input('Enter string: ')
+str2=input('Enter string: ')
+if str2 in str1:
+    str3=str2[0:4]+'REVERSE'
+    print(str3)
+else:
+    print('')
