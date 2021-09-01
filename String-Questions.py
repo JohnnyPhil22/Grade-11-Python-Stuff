@@ -51,3 +51,13 @@ if s==s[::-1]:
     print("It is a palindrome.")
 else:
     print("It is not a palindrome.")
+
+# Check if 0 is in string and print number of times 0 appears
+int=input("Enter a number: ")
+str(int)
+count=0
+for i in range(len(int)):
+    if int[i]=='0':
+        count+=1
+print('0' in int)
+print("Number of times 0 appears:",count)
