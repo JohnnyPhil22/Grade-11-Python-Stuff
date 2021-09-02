@@ -97,10 +97,10 @@ while opt in "yY":
             r=r*10+d
             n//=10
         print(r)
-            if r==dn:
-                print("Number is a palindrome.")
-            else:
-                print("Number is not a palindrome.")
+        if r==dn:
+            print("Number is a palindrome.")
+        else:
+            print("Number is not a palindrome.")
     elif ch==4:
         n=int(input("Enter number: "))
         s,dn=0,n
@@ -109,10 +109,10 @@ while opt in "yY":
             s+=d**3
             dn//=10
         print(s)
-            if s==n:
-                print("It is an Armstrong number.")
-            else:
-                print("It is not an Armstrong number.")
+        if s==n:
+            print("It is an Armstrong number.")
+        else:
+            print("It is not an Armstrong number.")
     elif ch==5:
         n=int(input("Enter number: "))
         for i in range(2,n//2+1):
@@ -153,9 +153,9 @@ while opt in "yY":
                 else:
                     print("A",end='')
         print('')
-     else:
+    else:
         print("Select between options 1 and 2.")
-     opt=input("Press y to continue: ")
+    opt=input("Press y to continue: ")
 # Calculate sum and average of odd, even and prime number.
 min=int(input("Enter Minimum Value: "))
 max=int(input("Enter Maximum Value: "))
