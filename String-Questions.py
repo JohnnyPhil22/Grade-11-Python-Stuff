@@ -70,3 +70,76 @@ if str2 in str1:
     print(str3)
 else:
     print('')
+
+# Input String and Count Number of Times a Appears
+s=input('Enter a string: ')
+count=0
+for i in range(0,len(s)):
+    if s[i]=='a':
+        count+=1
+print('Number of times \'a\' appear:',count)
+
+# Print Patterns
+str='abc'
+# 1st Sub Part
+for i in range(0,3):
+    for j in range(0,i+1):
+        print(str[i],end='')
+    print()
+#2
+for i in range(1,4):
+    for j in range(0,i):
+        print(str[j],end='')
+    print()
+#3
+for i in range(3,0,-1):
+    for j in range(0,i):
+        print(str[j],end='')
+    print()
+#4
+for i in range(-1,2,1):
+    for j in range(2,i,-1):
+        print(str[j],end='')
+    print()
+#5
+for i in range(1,4):
+    for r in range(1,i+1):
+        for j in range(0,i):
+            print(str[j],end='')
+    print()
+
+# 3number of Words in Sentence
+s=input('Enter sentence: ')
+count=0
+for i in range(0,len(s)):
+    if s[i]==' ':
+        count+=1
+print('Number of words in sentence:',(count+1))
+
+# Check if word is in string
+s=input('Enter string: ')
+w=input('Enter word: ')
+if w in s:
+    print('Word is in string.')
+else:
+    print('Word is not in string.')
+
+# Input n names and print Longest Name
+n=int(input("Number of names: "))
+s=input("Enter name: ")
+max=s
+for i in range(1,n):
+    s=input("Enter name: ")
+    while len(s)>len(max):
+        max=s
+print('Longest name is',max)
+
+# Input n names and print Shortest Name
+n=int(input("Number of names: "))
+s=input("Enter name: ")
+min=s
+for i in range(1,n):
+    s=input("Enter name: ")
+    while len(s)<len(min):
+        min=s
+print('Shortest name is',min)
