@@ -146,11 +146,9 @@ print('Shortest name is',min)
 
 # Write a program to enter string and see if all characters are uppercase or lowercase
 s=input("Enter a string: ")
-l=s.lower()
-u=s.upper()
-if u==s:
+if s.upper()==s:
     print('All characters are uppercase.')
-elif l==s:
+elif s.lower()==s:
     print('All characters are lowercase.')
 else:
     print('All characters are neither lowercase nor uppercase.')
