@@ -152,3 +152,26 @@ elif s.lower()==s:
     print('All characters are lowercase.')
 else:
     print('All characters are neither lowercase nor uppercase.')
+
+# Input string and count number of alphabets, numbers and special chars.
+s=input("Enter a string: ")
+counta,countn,counts=0,0,0
+for i in range(0,len(s)):
+    if s[i]=='a' or s[i]=='b' or s[i]=='c' or s[i]=='d' or s[i]=='e' or s[i]=='f' or s[i]=='g' or s[i]=='h' or s[i]=='i' or s[i]=='j' or s[i]=='k' or s[i]=='l' or s[i]=='m' or s[i]=='n' or s[i]=='o' or s[i]=='p' or s[i]=='q' or s[i]=='r' or s[i]=='s' or s[i]=='t' or s[i]=='u' or s[i]=='v' or s[i]=='w' or s[i]=='x' or s[i]=='y' or s[i]=='z' or s[i]=='A' or s[i]=='B' or s[i]=='C' or s[i]=='D' or s[i]=='E' or s[i]=='F' or s[i]=='G' or s[i]=='H' or s[i]=='I' or s[i]=='J' or s[i]=='K' or s[i]=='L' or s[i]=='M' or s[i]=='N' or s[i]=='O' or s[i]=='P' or s[i]=='Q' or s[i]=='R' or s[i]=='S' or s[i]=='T' or s[i]=='U' or s[i]=='V' or s[i]=='W' or s[i]=='X' or s[i]=='Y' or s[i]=='Z':
+        counta+=1
+    elif '0'<=s[i]<='9':
+        countn+=1
+    else:
+        counts+=1
+print('Number of alphabets:',counta)
+print('Number of numbers:',countn)
+print('Number of special characters:',counts)
+
+# Input string and convert case of string.
+n=input('Enter string: ')
+if n==n.upper():
+    print(n.lower())
+elif n==n.lower():
+    print(n.upper())
+else:
+    print('Both upper and lower cases.')
