@@ -175,3 +175,33 @@ elif n==n.lower():
     print(n.upper())
 else:
     print('Both upper and lower cases.')
+
+# Input string and count number of letters, uppercase letters, lowercase letters, numbers and special characters.
+s=input("Enter a string: ")
+counta=countn=counts=countl=countu=0
+for i in s:
+    if i.isalpha():
+        counta+=1
+    if i.islower():
+        countl+=1
+    if i.isupper():
+        countu+=1
+    if i.isnumeric():
+        countn+=1
+    if i.isalnum()==False and i.isspace()==False:
+        counts+=1
+print('Number of lowercase characters:',countl)
+print('Number of uppercase characters:',countu)
+print('Number of alphabets:',counta)
+print('Number of numbers:',countn)
+print('Number of special characters:',counts)
+
+# Input string and substring, print number of times substring occurs in string.
+s=input('Enter string: ')
+ss=input('Enter substring: ')
+print('Number of times substring occurs in string:',s.count(ss))
+
+# Input string containing decimal number and prints out decimal part of number.
+s=input('Enter decimal number: ')
+if "." in str(s):
+    print('Decimal part of the number:',str(s).split(".")[-1])
