@@ -108,7 +108,7 @@ for i in range(1,4):
             print(str[j],end='')
     print()
 
-# 3number of Words in Sentence
+# Number of Words in Sentence
 s=input('Enter sentence: ')
 count=0
 for i in range(0,len(s)):
