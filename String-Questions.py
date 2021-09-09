@@ -203,5 +203,5 @@ print('Number of times substring occurs in string:',s.count(ss))
 
 # Input string containing decimal number and prints out decimal part of number.
 s=input('Enter decimal number: ')
-if "." in str(s):
-    print('Decimal part of the number:',str(s).split(".")[-1])
+print('Decimal part of number: .'+str(s).split(".")[-1])
+print("Decimal part of number: ."+s[s.index(".")+1:])
