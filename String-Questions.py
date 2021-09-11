@@ -205,3 +205,53 @@ print('Number of times substring occurs in string:',s.count(ss))
 s=input('Enter decimal number: ')
 print('Decimal part of number: .'+str(s).split(".")[-1])
 print("Decimal part of number: ."+s[s.index(".")+1:])
+
+# Input string and capitalise first letter of each word
+s=input('Enter string: ')
+print('Capitalised string:',s.title())
+
+# Input string, extract numbers and find sum
+s=input('Enter string: ')
+sum=0
+for i in range(0,len(s)):
+    if '0'<=s[i]<='9':
+        sum+=int(s[i])
+print('Sum of all numbers in string:',sum)
+
+# Input string and print each word in new line
+s=input('Enter string: ')
+s=s.split(' ')
+for word in s:
+    print(word)
+
+# Input string, capitalise first letter of each word and create new string using that
+s=input('Enter string: ')
+snew=s.title()
+print('Capitalised string:',snew)
+
+# Check if word is in string
+s=input('Enter string: ')
+w=input('Enter word: ')
+if w in s:
+    print('Word is in string.')
+else:
+    print('Word is not in string.')
+
+# Number of times word is in string
+s=input('Enter string: ')
+w=input('Enter word: ')
+print('Number of times word in string:',s.count(w))
+
+# Replace word in string with input word by user
+s=input('Enter string: ')
+w=input('Enter word for replacing: ')
+wn=input('Enter word to replace: ')
+s=s.replace(w,wn)
+print('New string:',s)
+
+# Input string and word, reverse word and make new text.
+s=input('Enter string: ')
+w=input('Enter word to replace: ')
+wn=w[::-1]
+s=s.replace(w,wn)
+print('New string:',s)
