@@ -74,3 +74,49 @@ for i in range(0,5):
         print(chr(n),end=' ')
         n+=1
     print('')
+
+'''
+Given string 'abc', print following patterns:
+a. a
+   bb
+   ccc
+b. a
+   ab
+   abc
+c. abc
+   ab
+   a
+d. cba
+   cb
+   c
+e. a
+   abab
+   abcabcabc
+'''
+str='abc'
+# 1st Sub Part
+for i in range(0,3):
+    for j in range(0,i+1):
+        print(str[i],end='')
+    print()
+# 2nd Sub Part
+for i in range(1,4):
+    for j in range(0,i):
+        print(str[j],end='')
+    print()
+# 3rd Sub Part
+for i in range(3,0,-1):
+    for j in range(0,i):
+        print(str[j],end='')
+    print()
+# 4th Sub Part
+for i in range(-1,2,1):
+    for j in range(2,i,-1):
+        print(str[j],end='')
+    print()
+# 5th Sub Part
+for i in range(1,4):
+    for r in range(1,i+1):
+        for j in range(0,i):
+            print(str[j],end='')
+    print()
