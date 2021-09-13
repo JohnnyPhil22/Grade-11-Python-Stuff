@@ -293,3 +293,16 @@ for i in s:
     else:
         n=False
 print(n)
+
+# Input string then prints a string that capitalise every other letter in the string
+s=input('Enter string: ')
+size=True
+ns=''
+for i in range(0,len(s)):
+    if size==True:
+        ns+=s[i].capitalize()
+        size=False
+    else:
+        ns+=s[i].lower()
+        size=True
+print('New string:',ns)
