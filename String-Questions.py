@@ -284,3 +284,12 @@ if count>=1:
         print('String has more than one digit.')
 else:
     print('String has no digit.')
+
+## Method 3
+s=input('Enter string: ')
+for i in s:
+    if i.isnumeric():
+        n=True 
+    else:
+        n=False
+print(n)
