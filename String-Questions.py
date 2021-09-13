@@ -256,7 +256,22 @@ wn=w[::-1]
 s=s.replace(w,wn)
 print('New string:',s)
 
-# Write a program to input a string and check if it contains at least one digit or not.
+# Input a string and check if it contains at least one digit or not.
+## Method 1
+n=input('Enter string: ')
+count=0
+for i in range(len(n)-1,-1,-1):
+    if n[i] in '0123456789':
+        count+=1
+if count>=1:
+    if count==1:
+        print('String has one digit.')
+    elif count>1:
+        print('String has more than one digit.')
+else:
+    print('String has no digit.')
+
+## Method 2
 s=input('Enter string: ')
 count=0
 for i in range(0,len(s)):
