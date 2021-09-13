@@ -306,3 +306,21 @@ for i in range(0,len(s)):
         ns+=s[i].lower()
         size=True
 print('New string:',ns)
+
+# Input number and convert it to roman numerals
+n=int(input("Enter a number: "))
+if n>3999:
+    print('Run program again and enter another number')
+else:
+    v=[1000,900,500,400,100,90,50,40,10,9,5,4,1]
+    s=['M','CM','D','CD','D','XD','L','XL','X','IX','V','IV','I']
+    r=''
+    i=0
+    while n>0:
+        d=n//v[i]
+        n%=v[i]
+        while d:
+            r+=s[i]
+            d-=1
+        i+=1
+    print('Roman Numeral Form:',r)
