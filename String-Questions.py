@@ -255,3 +255,17 @@ w=input('Enter word to replace: ')
 wn=w[::-1]
 s=s.replace(w,wn)
 print('New string:',s)
+
+# Write a program to input a string and check if it contains at least one digit or not.
+s=input('Enter string: ')
+count=0
+for i in range(0,len(s)):
+    if '0'<=s[i]<='9':
+        count+=1
+if count>=1:
+    if count==1:
+        print('String has one digit.')
+    elif count>1:
+        print('String has more than one digit.')
+else:
+    print('String has no digit.')
