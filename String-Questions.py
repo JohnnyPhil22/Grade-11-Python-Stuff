@@ -325,11 +325,15 @@ else:
         i+=1
     print('Roman Numeral Form:',r)
 
-#Convert binary number to a decimal number
+# Convert binary number to decimal number
 b=input('Enter binary number: ')
-d=0
-b=b[::-1]
-for i in range(0,len(b)):
-    if b[i]=="1":
-        d+=2**i
-print('Decimal converted number:',d)
+dp=b.find('.')
+id,fd,twos=0,0,1
+for i in range(dp-1,-1,-1):
+	id+=((ord(b[i])-ord('0'))*twos)
+	twos*=2
+twos=2
+for i in range(dp+1,len(b)):
+    fd+=((ord(b[i])-ord('0'))/twos)
+    twos*=2.0
+print('Decimal converted number:',id+fd)
