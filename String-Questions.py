@@ -324,3 +324,12 @@ else:
             d-=1
         i+=1
     print('Roman Numeral Form:',r)
+
+#Convert binary number to a decimal number
+b=input('Enter binary number: ')
+d=0
+b=b[::-1]
+for i in range(0,len(b)):
+    if b[i]=="1":
+        d+=2**i
+print('Decimal converted number:',d)
