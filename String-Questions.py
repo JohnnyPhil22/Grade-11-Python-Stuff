@@ -197,9 +197,17 @@ print('Number of numbers:',countn)
 print('Number of special characters:',counts)
 
 # Input string and substring, print number of times substring occurs in string.
+## Method 1
 s=input('Enter string: ')
 ss=input('Enter substring: ')
 print('Number of times substring occurs in string:',s.count(ss))
+## Method 2
+s=input('Enter string: ')
+ss=input('Enter substring: ')
+count=0
+if ss in s:
+	count+=1
+print('Number of times substring occurs in string:',count)
 
 # Input string containing decimal number and prints out decimal part of number.
 s=input('Enter decimal number: ')
@@ -337,3 +345,15 @@ for i in range(dp+1,len(b)):
     fd+=((ord(b[i])-ord('0'))/twos)
     twos*=2.0
 print('Decimal converted number:',id+fd)
+
+# Print toggle case for text given
+s='Thursday Is Fun Day'
+n=''
+for i in range(0,len(s)):
+    if s[i].isupper():
+        n+=s[i].lower()
+    elif s[i].isalpha():
+        n+=s[i].upper()
+    else:
+        n+=' '
+print(n)
