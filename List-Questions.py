@@ -16,6 +16,9 @@ print(list1[8])
 print(list1[9])
 
 # Create two lists and concatenate them.
+list1=['J','P',2,2]
+list2=['_',0,0,7]
+print(list1+list2)
 
 # Write a program to traverse a list.
 list1=['Red','Green','Blue','Yellow','Black']
