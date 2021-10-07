@@ -357,3 +357,23 @@ for i in range(0,len(s)):
     else:
         n+=' '
 print(n)
+
+# Input string and calculate number of characters, alphabets, numbers, special characters and words
+s=input("Enter a string: ")
+count=counta=countn=counts=countw=0
+for i in s:
+    count+=1
+    if i.isalpha():
+        counta+=1
+    if i.isnumeric():
+        countn+=1
+    if i.isalnum()==False and i.isspace()==False:
+        counts+=1
+for i in range(0,len(s)):
+    if s[i]==' ':
+        countw+=1
+print('Number of characters:',count)
+print('Number of alphabets:',counta)
+print('Number of numbers:',countn)
+print('Number of special characters:',counts)
+print('Number of words:',countw+1)
