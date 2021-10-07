@@ -14,7 +14,7 @@ for i in range(0,len(s)):
        count+=1
 print('Number of times vowels appear:',count)
 
-# Input tring and count number of consonants.
+# Input string and count number of consonants.
 s=input("Enter a string: ")
 count=0
 for i in range(0,len(s)):
