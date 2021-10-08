@@ -377,3 +377,16 @@ print('Number of alphabets:',counta)
 print('Number of numbers:',countn)
 print('Number of special characters:',counts)
 print('Number of words:',countw+1)
+
+# Input string and delete character
+s=input('Enter string: ')
+c=input('Enter character to be deleted: ')
+sn=''
+for i in s:
+    sn=s.replace(c,'')
+print('New string without character:',sn)
+
+# Input string and replace spaces with hyphens
+s=input('Enter string: ')
+sn=s.replace(' ','-')
+print('New string without spaces:',sn)
