@@ -390,3 +390,12 @@ print('New string without character:',sn)
 s=input('Enter string: ')
 sn=s.replace(' ','-')
 print('New string without spaces:',sn)
+
+# Input string and print longest word
+s=input("Enter string: ")
+s=s.split(' ')
+maxword=''
+for word in s:
+    while len(word)>len(maxword):
+        maxword=word
+print('Longest substring is:',maxword)
