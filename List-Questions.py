@@ -55,3 +55,10 @@ for j in l2new:
     count+=1
 s2=s2/count
 print('Average of every fourth element in second list:',s2)
+
+# Write program to make copy of list with 10 elements then add 10 to first and last element of copied list.
+l1=[1,2,3,4,5,6,7,8,9,10]
+l2=l1.copy()
+l2[0]+=10
+l2[9]+=10
+print(l1,l2)
