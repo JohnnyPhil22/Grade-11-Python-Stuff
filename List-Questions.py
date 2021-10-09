@@ -39,3 +39,19 @@ while i<len(list1):
 list1=['q','w','e','r','t','y']
 for a in range(len(list1)):
     print('At indexes',a,'and',(a-len(list1)),'element present:',list1[a])
+
+# Take two lists with elements as numbers from 1 to 20. Find sum of elements between indexes 5 to 15 in first list. Find average of every fourth element in second list.
+l1=l2=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+l1new=l1[6:15:2]
+l2new=l2[::4]
+s1=s2=count=0
+print('New first list:',l1new)
+for i in l1new:
+    s1+=i
+print('Sum of elements between indexes 5 to 15 in first list:',s1)
+print('New second list:',l2new)
+for j in l2new:
+    s2+=j
+    count+=1
+s2=s2/count
+print('Average of every fourth element in second list:',s2)
