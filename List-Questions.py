@@ -1,4 +1,4 @@
-# Write a program to create nested list with 10 elements where 4th element is nested list with 4 elements. Access all elements with indexing.
+# Create nested list with 10 elements where 4th element is nested list with 4 elements. Access all elements with indexing.
 list1=[0,0,7,['J','P',2,2],9,9,5,'l','s','t']
 print(list1[0])
 print(list1[1])
@@ -20,7 +20,7 @@ list1=['J','P',2,2]
 list2=['_',0,0,7]
 print(list1+list2)
 
-# Write a program to traverse a list.
+# Traverse a list.
 list1=['Red','Green','Blue','Yellow','Black']
 ## For loop
 ### Method 1
@@ -35,7 +35,7 @@ while i<len(list1):
     print(list1[i])
     i+=1
 
-# Write program to print elements of list in separate lines along with element's both indexes.
+# Print elements of list in separate lines along with element's both indexes.
 list1=['q','w','e','r','t','y']
 for a in range(len(list1)):
     print('At indexes',a,'and',(a-len(list1)),'element present:',list1[a])
@@ -56,9 +56,24 @@ for j in l2new:
 s2=s2/count
 print('Average of every fourth element in second list:',s2)
 
-# Write program to make copy of list with 10 elements then add 10 to first and last element of copied list.
+# Make copy of list with 10 elements then add 10 to first and last element of copied list.
 l1=[1,2,3,4,5,6,7,8,9,10]
 l2=l1.copy()
 l2[0]+=10
 l2[9]+=10
 print(l1,l2)
+
+# Take input of elements from users and give smallest number and it's index.
+## Method 1
+l=[1,2,3,4,5,6,7,8,9,10]
+for i in range(0,len(l)):
+    m=min(l)
+print('The smallest element is',m,'and it\'s index number is',l.index(m))
+## Method 2
+l=eval(input('Enter elements: '))
+print('List given:',l)
+print('Smallest element is',min(l),'and it\'s index number is',l.index(min(l)))
+## Method 3
+l=list(input('Enter elements: '))
+print(l)
+print('Smallest element is',min(l),'and it\'s index number is',l.index(min(l)))
