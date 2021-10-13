@@ -77,3 +77,20 @@ print('Smallest element is',min(l),'and it\'s index number is',l.index(min(l)))
 l=list(input('Enter elements: '))
 print(l)
 print('Smallest element is',min(l),'and it\'s index number is',l.index(min(l)))
+
+# Find largest/max number in a list using sort
+l=eval(input('Enter elements: '))
+print('List given:',l)
+l.sort()
+print('Largest element is:',l[-1])
+
+# Find average/mean of list
+l=eval(input('Enter elements: '))
+print('List given:',l)
+print('Average of list elements:',(sum(l)/len(l)))
+
+# Find minimum/smallest number in list
+l=eval(input('Enter elements: '))
+print('List given:',l)
+l.sort()
+print('Smallest element is:',l[0])
