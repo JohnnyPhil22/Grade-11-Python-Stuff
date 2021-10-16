@@ -96,13 +96,13 @@ l.sort()
 print('Smallest element is:',l[0])
 
 # Asks user to input numbers in list to be appended to existing list. Whether user extends single number/list of numbers, append into list accordingly.
-l=[2,3,4,5]
-n=int(input('Enter number of elements: '))
-if n==1:
-    e=input('Enter number: ')
-    l.append(e)
-if n>=2:
-    for i in range(n):
-        e=input('Enter numbers: ')
-        l.extend(e)
+l=[1,2,3,4]
+print('Existing list:',l)
+n=eval(input('Enter values: '))
+if type(n)==type([]):
+    l.extend(n)
+elif type(n)==type(1):
+    l.append(n)
+else:
+    print('Enter list or integer.')
 print('New list:',l)
