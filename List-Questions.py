@@ -106,3 +106,15 @@ elif type(n)==type(1):
 else:
     print('Enter list or integer.')
 print('New list:',l)
+
+# Replicate list twice and arrange elements in ascending and descending order
+l=eval(input('Enter elements for list: '))
+l2=l.copy()
+l3=l.copy()
+print('Copy 1:',l2)
+print('Copy 2:',l3)
+l.sort()
+print('List elements in ascending order:',l)
+l.sort()
+l.reverse()
+print('List elements in descending order:',l)
