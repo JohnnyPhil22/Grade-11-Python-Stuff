@@ -127,3 +127,12 @@ for i in range(0,len(l)):
         break
     else:
         print('No, element is not present')
+
+# Count frequency of element in list
+l=eval(input('Enter elements: '))
+e=eval(input('Enter element to search: '))
+count=0
+for i in range(0,len(l)):
+    if l[i]==e:
+        count+=1
+print('Frequency of element:',count)
