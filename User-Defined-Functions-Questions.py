@@ -28,7 +28,7 @@ l=eval(input('Enter elements for list: '))
 def numpreslst(l):
     e=eval(input('Enter element you want to check if in list: '))
     if e in l:
-        print('Element is present in list at index number:',l.index(e))
+        print('Element is present in list at index number:',l.index(e),'and at position',(l.index(e)+1))
     else:
         print('Element not present in list.')
 numpreslst(l)
