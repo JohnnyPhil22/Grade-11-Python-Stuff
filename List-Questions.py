@@ -136,3 +136,10 @@ for i in range(0,len(l)):
     if l[i]==e:
         count+=1
 print('Frequency of element:',count)
+
+# Check if maximum element is in first or second half
+l=eval(input("Enter elements: "))
+if l.index(max(l))<=(len(l)/2):
+    print("Maximum element",max(l),"is in first half.")
+else:
+    print("Maximum element",max(l),"is in second half.")
