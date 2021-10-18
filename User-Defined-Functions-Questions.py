@@ -24,11 +24,11 @@ a=avgmarks(l,n)
 print('Average of marks:',a)
 
 # If element present in list
+l=eval(input('Enter elements for list: '))
 def numpreslst(l):
     e=eval(input('Enter element you want to check if in list: '))
     if e in l:
         print('Element is present in list at index number:',l.index(e))
     else:
         print('Element not present in list.')
-l=eval(input('Enter elements for list: '))
 npl=numpreslst(l)
