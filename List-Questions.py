@@ -117,3 +117,13 @@ print('List elements in ascending order:',l)
 l.sort()
 l.reverse()
 print('List elements in descending order:',l)
+
+# Search for element in list
+l=eval(input('Enter elements: '))
+e=eval(input('Enter element to search: '))
+for i in range(0,len(l)):
+    if l[i]==e:
+        print('Yes, element is present at index position',l.index(e))
+        break
+    else:
+        print('No, element is not present')
