@@ -143,3 +143,13 @@ if l.index(max(l))<=(len(l)/2):
     print("Maximum element",max(l),"is in first half.")
 else:
     print("Maximum element",max(l),"is in second half.")
+
+# Display max element of both lists combined along with index in list
+l1=eval(input('Enter elements for list 1: '))
+l2=eval(input('Enter elements for list 2: '))
+print('List 1 given:',l1,'and it\'s maximum element:',max(l1),'and it\'s index number:',l1.index(max(l1)))
+print('List 2 given:',l2,'and it\'s maximum element:',max(l2),'and it\'s index number:',l2.index(max(l2)))
+if max(l1)>max(l2):
+    print('Maximum element of both lists is in list 1')
+else:
+    print('Maximum element of both lists is in list 2')
