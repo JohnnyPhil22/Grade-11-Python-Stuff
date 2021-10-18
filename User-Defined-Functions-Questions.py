@@ -31,4 +31,4 @@ def numpreslst(l):
         print('Element is present in list at index number:',l.index(e))
     else:
         print('Element not present in list.')
-npl=numpreslst(l)
+numpreslst(l)
