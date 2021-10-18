@@ -17,7 +17,8 @@ def avgmarks(l,n):
 l=[]
 n=int(input('Enter number of students: '))
 for i in range(0,n):
-    m=int(input('Enter marks of student: '))
+    print('Enter marks of student',(i+1),': ')
+    m=int(input())
     l.append(m)
 a=avgmarks(l,n)
 print('Average of marks:',a)
