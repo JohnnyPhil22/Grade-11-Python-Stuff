@@ -55,3 +55,12 @@ if ch==1:
 if ch==2:
     e=eval(input('Enter element: '))
     print('New list:',delelem(e))
+
+# Insert element
+def insele(l):
+    l.insert(i,e)
+    return l
+l=eval(input('Enter list: '))
+e=eval(input('Enter element: '))
+i=int(input('Enter index number: '))
+print('New list:',insele(l))
