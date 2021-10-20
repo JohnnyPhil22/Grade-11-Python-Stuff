@@ -38,3 +38,20 @@ l=eval(input('Enter elements of list: '))
 def revlist(l):
     return l[-1:-len(l)-1:-1]
 print('Reversed list:',revlist(l))
+
+# Remove element by index number or element itself
+def delpos(i):
+    l.pop(i)
+    return l
+def delelem(e):
+    l.remove(e)
+    return l
+l=eval(input('Enter list: '))
+print('Enter 1 to remove by index number, or 2 to remove by element.')
+ch=int(input('Enter choice (1 or 2): '))
+if ch==1:
+    i=int(input('Enter index number: '))
+    print('New list:',delpos(i))
+if ch==2:
+    e=eval(input('Enter element: '))
+    print('New list:',delelem(e))
