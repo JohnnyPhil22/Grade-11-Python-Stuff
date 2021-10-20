@@ -64,3 +64,13 @@ l=eval(input('Enter list: '))
 e=eval(input('Enter element: '))
 i=int(input('Enter index number: '))
 print('New list:',insele(l))
+
+# Remove duplicate elements
+l=eval(input('Enter elements: '))
+def delrepelem(l):
+    for i in range(0,len(l)):
+        for j in l:
+            if l.count(j)>1:
+                l.remove(j)
+    return l
+print('New list:',delrepelem(l))
