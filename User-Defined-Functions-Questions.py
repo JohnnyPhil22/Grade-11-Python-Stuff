@@ -32,3 +32,9 @@ def numpreslst(l):
     else:
         print('Element not present in list.')
 numpreslst(l)
+
+# Reverse list
+l=eval(input('Enter elements of list: '))
+def revlist(l):
+    return l[-1:-len(l)-1:-1]
+print('Reversed list:',revlist(l))
