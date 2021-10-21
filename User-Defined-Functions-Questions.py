@@ -74,3 +74,16 @@ def delrepelem(l):
                 l.remove(j)
     return l
 print('New list:',delrepelem(l))
+
+# Median of List
+m=0
+def medl(l):
+    if len(l)%2==0:
+        m=(l[len(l)//2]+l[(len(l)//2)-1])/2
+        return m
+    else:
+        m=l[(len(l)-1)//2]
+        return m
+l=eval(input('Enter elements: '))
+l.sort()
+print('Median of list:',medl(l))
