@@ -87,3 +87,12 @@ def medl(l):
 l=eval(input('Enter elements: '))
 l.sort()
 print('Median of list:',medl(l))
+
+# Second largest element
+def secmaxno(l):
+    l.sort()
+    return l[-2]
+l=eval(input('Enter elements: '))
+print('List given:',l)
+l.sort()
+print('Second largest element is:',secmaxno(l))
