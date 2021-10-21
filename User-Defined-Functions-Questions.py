@@ -96,3 +96,12 @@ l=eval(input('Enter elements: '))
 print('List given:',l)
 l.sort()
 print('Second largest element is:',secmaxno(l))
+
+# Largest element
+def maxelem(l):
+    l.sort()
+    return l[-1]
+l=eval(input('Enter elements: '))
+print('List given:',l)
+l.sort()
+print('Largest element is:',maxelem(l))
