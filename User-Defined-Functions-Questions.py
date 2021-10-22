@@ -116,3 +116,19 @@ def countelem(l,e):
 l=eval(input('Enter elements: '))
 e=eval(input('Enter element to count: '))
 print('Frequency of element:',countelem(l,e))
+
+# Separate positive and negative numbers in list
+l=eval(input('Enter elements: '))
+def sepposneg(l):
+    p=[]
+    n=[]
+    for i in l:
+        if i>=0:
+            p.append(i)
+    print('List of positive numbers:',p)
+    for j in l:
+        if j<0:
+            n.append(j)
+    print('List of negative numbers',n)
+print('Original list:',l)
+sepposneg(l)
