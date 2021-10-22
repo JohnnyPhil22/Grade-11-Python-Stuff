@@ -105,3 +105,14 @@ l=eval(input('Enter elements: '))
 print('List given:',l)
 l.sort()
 print('Largest element is:',maxelem(l))
+
+# Frequency of element
+def countelem(l,e):
+    count=0
+    for i in range(0,len(l)):
+        if l[i]==e:
+            count=count+1
+    return count
+l=eval(input('Enter elements: '))
+e=eval(input('Enter element to count: '))
+print('Frequency of element:',countelem(l,e))
