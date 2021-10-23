@@ -122,8 +122,9 @@ l=eval(input('Enter elements: '))
 def sepposneg(l):
     p=[]
     n=[]
+    z=[]
     for i in l:
-        if i>=0:
+        if i>0:
             p.append(i)
     print('List of positive numbers:',p)
     for j in l:
