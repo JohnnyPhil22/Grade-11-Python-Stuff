@@ -79,3 +79,38 @@ print("\t ]")
 s=[[l1[i][j]+l2[i][j] for j in range(len(l1[0]))] for i in range(len(l1))]
 for k in s:
    print(s)
+
+# Write a program to print the elements of upper triangle and lower triangle
+l=[]
+r=int(input("Enter number of rows: "))
+c=int(input("Enter number of columns: "))
+for i in range(r):
+    row=[]
+    for j in range(c):
+        e=int(input("Element at "+str(i)+","+str(j)+": "))
+        row.append(e) 
+    l.append(row)
+print("2D List created:",l)
+print("3D List: [")
+for i in range(r):
+    print("\t [ ",end="")
+    for j in range(c):
+        print(l[i][j],end=" ")
+    print("]")
+print("\t ]")
+print('Elements in lower triangle:')
+for i in range(0,r):
+    for j in range(0,c):
+        if i<j:
+            print(' ',end=' ')
+        else:
+            print(l[i][j],end=' ')
+    print(' ')
+print('Elements in upper triangle:')
+for i in range(0,r):
+    for j in range(0,c):
+        if i>j:
+            print(' ',end=' ')
+        else:
+            print(l[i][j],end=' ')
+    print(' ')
