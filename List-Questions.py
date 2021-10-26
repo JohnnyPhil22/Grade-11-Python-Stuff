@@ -153,3 +153,13 @@ if max(l1)>max(l2):
     print('Maximum element of both lists is in list 1')
 else:
     print('Maximum element of both lists is in list 2')
+
+# Find sum of all odd and even numbers separately
+l=eval(input('Enter elements: '))
+es,os=0,0
+for i in range(0,len(l)):
+    if l[i]%2==0:
+        es+=l[i]
+    else:
+        os+=l[i]
+print('Sum of even elements:',es,'and sum of odd elements:',os)
