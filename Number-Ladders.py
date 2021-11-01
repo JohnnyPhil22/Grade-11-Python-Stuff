@@ -63,3 +63,15 @@ for i in range(5,0,-1):
     for j in range(1,i+1):
         print(i,end='')
     print()
+
+'''
+56789
+ 6789
+  789
+   89
+    9
+'''
+n='56789'
+for i in range(len(n)):
+    print(' '*i,end=' ')
+    print(n[i:])
