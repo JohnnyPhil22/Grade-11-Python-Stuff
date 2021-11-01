@@ -9,6 +9,7 @@ for i in range(1,6):
     for j in range(1,i+1):
         print(j,end='')
     print()
+
 '''
 1
 22
@@ -25,6 +26,7 @@ for i in range(1,6):
 for i in range(1,6):
     print(str(i)*i,end='')
     print()
+
 '''
 1
 10
@@ -39,6 +41,7 @@ for i in range(1,6):
         else:
             print("1",end='')
     print('')
+
 '''
 1
 101
@@ -52,6 +55,8 @@ for i in range(1,8,2):
         else:
             print("1",end='')
     print('')
+
+
 '''
 55555
 4444
