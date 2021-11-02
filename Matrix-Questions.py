@@ -11,7 +11,7 @@ for i in range(r):
 print("2D List created:",l)
 print("3D List=[")
 for i in range(r):
-    print("\t[ ",end=" ")
+    print("\t [",end=" ")
     for j in range(c):
         print(l[i][j],end=" ")
     print("]")
@@ -30,7 +30,7 @@ for i in range(r):
 print("2D List created:",l)
 print("3D List: [")
 for i in range(r):
-    print("\t [ ",end=" ")
+    print("\t [",end=" ")
     for j in range(c):
         print(l[i][j],end=" ")
     print("]")
@@ -55,7 +55,7 @@ for i in range(r):
 print("2D List created:",l1)
 print("3D List: [")
 for i in range(r):
-    print("\t [ ",end="")
+    print("\t [",end="")
     for j in range(c):
         print(l1[i][j],end=" ")
     print("]")
@@ -71,7 +71,7 @@ for i in range(r):
 print("2D List created:",l2)
 print("3D List: [")
 for i in range(r):
-    print("\t [ ",end="")
+    print("\t [",end="")
     for j in range(c):
         print(l2[i][j],end=" ")
     print("]")
@@ -93,7 +93,7 @@ for i in range(r):
 print("2D List created:",l)
 print("3D List: [")
 for i in range(r):
-    print("\t [ ",end="")
+    print("\t [",end="")
     for j in range(c):
         print(l[i][j],end=" ")
     print("]")
