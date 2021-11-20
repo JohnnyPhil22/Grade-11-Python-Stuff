@@ -138,3 +138,20 @@ for i in range(1,n+1):
     s2+=i
   s+=s2
 print("Sum of series:",s)
+
+# 1+1/x+1/x2+1/x3+...
+s=1
+x=int(input('Enter x: '))
+n=int(input('Enter n: '))
+for i in range(1,n+1):
+    s+=1/(x**i)
+print('Sum:',s)
+
+# (x^2)/2!+(x^3)/3!+(x^4)/4!+...
+s,fact=0,1
+x=int(input('Enter x: '))
+n=int(input('Enter n: '))
+for i in range(2,n+1):
+    fact*=i
+    s+=x**i/fact
+print('Sum:',s)
