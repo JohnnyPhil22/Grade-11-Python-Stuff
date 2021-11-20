@@ -75,7 +75,15 @@ for i in range(5,0,-1):
    89
     9
 '''
+## Method 1
 n='56789'
 for i in range(len(n)):
     print(' '*i,end=' ')
     print(n[i:])
+## Method 2
+for i in range(1,6):
+    for sp in range(6,i,-1):
+        print(' ',end='')
+    for j in range(0,i):
+        print('* ',end='')
+    print('')
