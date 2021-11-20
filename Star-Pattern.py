@@ -144,3 +144,23 @@ while i<8:
         j+=1
     i+=1
     print('')
+
+'''
+*****
+*
+*
+*****
+*
+*
+*****
+'''
+for i in range(0,7):
+    if i==0 or i==3:
+        for j in range(4):
+            print('*',end='')
+    if i==6:
+        for j in range(5):
+            print('*',end='')
+    else:
+        for j in range(1):
+            print('*')
