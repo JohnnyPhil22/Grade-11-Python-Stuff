@@ -399,3 +399,11 @@ for word in s:
     while len(word)>len(maxword):
         maxword=word
 print('Longest substring is:',maxword)
+
+# Input string and print each word in new line and capitalise each word
+s=input('Enter string: ')
+print('Capitalised string:',s.title())
+s=s.split(' ')
+print('Words present in string:')
+for w in s:
+    print(w)
