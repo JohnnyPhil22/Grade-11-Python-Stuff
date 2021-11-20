@@ -140,3 +140,30 @@ for i in range(c):
         print(l[j][i],end=" ")
     print("]")
 print("\t\t ]")
+
+# Sum of given positions from matrix
+l=[]
+r=int(input("Enter number of rows: "))
+c=int(input("Enter number of columns: "))
+for i in range(r):
+    row=[]
+    for j in range(c):
+        e=int(input("Element at "+str(i)+","+str(j)+": "))
+        row.append(e) 
+    l.append(row)
+print("2D List created:",l)
+print("3D List: [")
+for i in range(r):
+    print("\t [",end=" ")
+    for j in range(c):
+        print(l[i][j],end=" ")
+    print("]")
+print("\t ]")
+n=int(input('Enter number of elements you want to find sum of: '))
+s=0
+for i in range(n):
+    e=input('Enter position of element: ')
+    rn=int(e[0])
+    cn=int(e[2])
+    s+=int(l[rn][cn])
+print('Sum of elements:',s)
