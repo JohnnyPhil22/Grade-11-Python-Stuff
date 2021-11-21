@@ -71,3 +71,4 @@ def inssort(l):
 l=[2,6,5,1,3,4]
 inssort(l)
 print('Sorted list:',l)
+
