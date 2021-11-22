@@ -120,3 +120,23 @@ for i in range(1,4):
         for j in range(0,i):
             print(str[j],end='')
     print()
+
+'''
+   e
+  cec
+ aceca
+racecar
+'''
+s1='r a c e c a r'
+for i in range(0,7,2):
+        print(' '*(6-i),end=' ')
+        print(s1[6-i:7+i])
+'''
+  di
+ ndia
+indian
+'''
+s2='i n d i a n'
+for i in range(0,7,2):
+        print(' '*(6-i),end=' ')
+        print(s2[6-i:7+(i-1)])
