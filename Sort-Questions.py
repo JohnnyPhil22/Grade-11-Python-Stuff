@@ -1,3 +1,16 @@
+# Linear Search
+l=[4,2,8,9,3,7]
+x=int(input('Enter number to search: '))
+f=False
+for i in range(len(l)):
+    if l[i]==x:
+        f=True
+        break
+if f==False:
+    print(x,'is not in list')
+else:
+    print(x,'found at position',(i+1))
+
 # Bubble Sort
 ## Method 1
 l=[6,19,1,15,11,12,14]
@@ -19,19 +32,6 @@ for i in range(len(l)):
         if l[j]>l[j+1]:
             l[j],l[j+1]=l[j+1],l[j]
 print('Sorted list:',l)
-
-# Linear Search
-l=[4,2,8,9,3,7]
-x=int(input('Enter number to search: '))
-f=False
-for i in range(len(l)):
-    if l[i]==x:
-        f=True
-        break
-if f==False:
-    print('%d is not in list'%x)
-else:
-    print('%d found at %dth position'%(x,(i+1)))
 
 # Selection Sort
 def selsort(l,s):
@@ -71,4 +71,3 @@ def inssort(l):
 l=[2,6,5,1,3,4]
 inssort(l)
 print('Sorted list:',l)
-
