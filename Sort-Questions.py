@@ -1,15 +1,15 @@
 # Linear Search
 l=[4,2,8,9,3,7]
-x=int(input('Enter number to search: '))
+n=int(input('Enter number to search: '))
 f=False
 for i in range(len(l)):
     if l[i]==x:
         f=True
         break
 if f==False:
-    print(x,'is not in list')
+    print(n,'is not in list')
 else:
-    print(x,'found at position',(i+1))
+    print(n,'found at position',(i+1))
 
 # Bubble Sort
 ## Method 1
