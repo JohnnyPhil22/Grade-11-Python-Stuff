@@ -167,3 +167,6 @@ for i in range(n):
     cn=int(e[2])
     s+=int(l[rn][cn])
 print('Sum of elements:',s)
+
+# Multiply matrices
+# Upper triangle sum
