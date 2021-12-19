@@ -3,13 +3,12 @@ l=[4,2,8,9,3,7]
 n=int(input('Enter number to search: '))
 f=False
 for i in range(len(l)):
-    if l[i]==x:
+    if l[i]==n:
         f=True
+        print(n,'found at position',i)
         break
 if f==False:
     print(n,'is not in list')
-else:
-    print(n,'found at position',(i+1))
 
 # Bubble Sort
 ## Method 1
