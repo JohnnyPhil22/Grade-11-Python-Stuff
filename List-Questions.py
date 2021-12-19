@@ -188,3 +188,10 @@ def avg(l):
 l=[15,9,55,41,35,20,62,49]
 a=avg(l)
 print("Average of list:",round(avg,2))
+
+# Frequency of element in list
+import collections
+l=[101,101,101,101,201,201,201,201]
+print("Original list: ",l)
+ctr=collections.Counter(l)
+print("Frequency of elements in list: ",ctr)
