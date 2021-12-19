@@ -163,3 +163,28 @@ for i in range(0,len(l)):
     else:
         os+=l[i]
 print('Sum of even elements:',es,'and sum of odd elements:',os)
+
+# Find largest number in list
+## Using sort
+a=[]
+n=int(input("Enter number of elements:"))
+for i in range(1,n+1):
+    b=int(input("Enter element:"))
+    a.append(b)
+a.sort()
+print("Largest element is:",a[n-1])
+## Using def
+def maxnumlist(l):
+    max=l[0]
+    for i in l:
+        if i > max:
+            max = i
+    return max
+print(maxnumlist([1,2,-8,0]))
+
+# Find mean of list
+def avg(l):
+    return sum(l)/len(l)
+l=[15,9,55,41,35,20,62,49]
+a=avg(l)
+print("Average of list:",round(avg,2))
