@@ -161,10 +161,7 @@ print('New tuple:',tuple(l))
 
 # Make new tuple with reversed elements from given tuples
 t=eval(input('Enter elements: '))
-rt=()
-for i in range(len(t)):
-    rt=t[::-1]
-print('Reversed tuple:',rt)
+print('Reversed tuple:',t[::-1])
 
 # Print sum of digits of each number
 t=eval(input('Enter elements: '))
