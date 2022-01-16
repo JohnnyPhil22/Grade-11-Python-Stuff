@@ -102,14 +102,21 @@ for i in range(len(t)):
 print('Lengths of nested tuples:',tuple(ntl))
 
 # Print name and total marks from tuple
-t=eval(input('Enter elements: '))
-l,nl,ml=list(t),[],[]
-for i in range(len(l)):
-    nl.append(t[i][0])
-    ml.append(t[i][1]+t[i][2])
-l.append(tuple(nl))
-l.append(tuple(ml))
-print(tuple(l[3]+l[4]))
+l=[]
+n=int(input('Enter number of students: '))
+for i in range(0,n):
+    q=[]
+    name=eval(input('Enter name: '))
+    q.append(name)
+    m1=int(input('Enter mark 1: '))
+    q.append(m1)
+    m2=int(input('Enter mark 2: '))
+    q.append(m2)
+    l.append(tuple(q))
+print('Name and marks of students:',tuple(l))
+for i in range(0,n):
+    s=l[i][1]+l[i][2]
+    print('Total marks of',l[i][0],'is',s)
 
 # Print name of student getting highest mark
 t=eval(input('Enter elements: '))
