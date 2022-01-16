@@ -196,7 +196,7 @@ for i in range(1,n):
     f2=next
 print('Tuple of Fibonacci numbers:',tuple(l))
 
-# Count number of pairs in tuple
+# Count number of pairs in tuple where both elements are even numbers
 t=eval(input('Enter elements: '))
 count=0
 for i in range(len(t)):
