@@ -66,7 +66,6 @@ for i in range(len(t)):
         count+=1
 print('Frequency of element:',count)
 
-'''
 # Split tuple into two one having odd and other having even
 t=eval(input('Enter elements: '))
 l,el,ol=list(t),[],[]
@@ -223,7 +222,7 @@ if min(t)==t[int(float((len(t))/2)-0.5)]:
     print(min(t),'is middle element')
 else:
     print(min(t),'is not middle element')
-'''
+
 # Check if elements in tuple are in sorted order or not
 t=eval(input('Enter elements: '))
 f,i=0,1
