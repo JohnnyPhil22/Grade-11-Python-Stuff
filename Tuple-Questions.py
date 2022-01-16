@@ -139,13 +139,25 @@ for i in range(len(t)):
 print(e,'appears',count,'times')
 
 # Add mark to a given student
-t=eval(input('Enter elements: '))
-n=eval(input('Enter student\'s name: '))
-m=eval(input('Enter mark of student: '))
-for i in range(len(t)):
-    if n in t[i]:
-        t[i].append(m)
-print('New tuple:',t)
+l=[]
+n=int(input('Enter number of students: '))
+for i in range(0,n):
+	q=[]
+	name=eval(input('Enter name: '))
+	q.append(name)
+	m1=int(input('Enter mark 1: '))
+	q.append(m1)
+	m2=int(input('Enter mark 2: '))
+	q.append(m2)
+	l.append(q)
+print('Name and marks of students:',tuple(l))
+e=eval(input('Enter name of student: '))
+for i in range(0,n):
+    for j in range(0,2):
+        if e==l[i][j]:
+            o=int(input('Enter mark: '))
+            l[i].append(o)
+print('New tuple:',tuple(l))
 
 # Make new tuple with reversed elements from given tuples
 t=eval(input('Enter elements: '))
