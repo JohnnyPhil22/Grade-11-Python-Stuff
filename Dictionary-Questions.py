@@ -20,3 +20,32 @@ print(car.items())
 car={'brand':'Ford','model':'Mustang','year':1964}
 for i in car:
     print(str(i),':',str(car[i]))
+
+# create a dictionary with roll number, name and computer mark
+r=eval(input("Enter roll number: "))
+n=eval(input("Enter name: "))
+m=eval("Enter Computer marks: "))
+d={}
+d["Roll Number"]=r
+d["Name"]=n
+d["CS Mark"]=m
+print('Dictionary:',d)
+
+# Create dictionary with n key:value pairs
+n=eval(input('Enter number of items: '))
+d={}
+for i in range(n):
+    k=eval(input('Enter key: '))
+    v=eval(input('Enter value: '))
+    d[k]=v
+print('Dictionary:',d)
+
+# Search for value using key in an inputted dictionary
+n=eval(input("Enter number of items: "))
+d={}
+for i in range(n):
+    k=eval(input("Enter key: "))
+    v=eval(input("Enter value: "))
+    d[k]=v
+kf=eval(input("Enter value to find: "))
+print(d[kf])
