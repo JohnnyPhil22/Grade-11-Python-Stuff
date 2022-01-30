@@ -2,8 +2,13 @@
 d={1:19,2:'Jonathan',3:[99,99,99,99,99]}
 print(d[2])
 
-# Your school has decided to give an scholarship amount of AED 2500 to few students. Input names of students in list or tuple and create dictionary with name as key and value as 2500.
-d={'names':['Jonathan','John'],'value':2500}
+# Input the names of students and create dictionary with names as key and value 2500
+n=int(input("How many students? "))
+t=()
+for i in range(n):
+    e=eval(input("Student name: "))
+    t+=(e,)
+d=dict.fromkeys(t,2500)
 print(d)
 
 car={'brand':'Ford','model':'Mustang','year':1964}
@@ -49,3 +54,13 @@ for i in range(n):
     d[k]=v
 kf=eval(input("Enter value to find: "))
 print(d[kf])
+
+# Input sentence and print count of each word
+s=eval(input("The sentence: "))
+sl=s.split()
+d={}
+for i in sl:
+    d[i]=sl.count(i)
+print(d)
+
+# 
