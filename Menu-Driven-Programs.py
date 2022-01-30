@@ -69,3 +69,40 @@ while opt in 'yY':
     else:
         print("Select from options 1 through 9.")
     opt=input("Press y to continue: ")
+
+# Menu driven program to perform functions on a dictionary - Part 1
+d={}
+for i in range(n):
+    itemname=input("Input item name: ")
+    value=eval(input("The price: "))
+    d[itemname]=value
+print('''1) To display a particular item price
+2) To add new item into dictionary
+3) To update an existing item
+4) To delete an item
+5) Display the dictionary
+6) Exit''')
+c = int(input("Which option to choose? "))
+if c==1:
+    item = input("Item to check: ")
+    print(d[item])
+elif c==2:
+    itemn = input("Item to add: ")
+    valuen = eval(input("Price to add: "))
+    d[itemn]=valuen
+    print(d)
+elif c==3:
+    itemn = input("Item to change: ")
+    valuen = eval(input("Price to change: "))
+    d[itemn] = valuen
+    print(d)
+elif c==4:
+    itemn = input("Item to delete: ")
+    del(d[itemn])
+    print(d)
+elif c==5:
+    print(d)
+elif c==6:
+    print("Program is done")
+else:
+    print("Enter proper option")
