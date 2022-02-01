@@ -70,7 +70,7 @@ while opt in 'yY':
         print("Select from options 1 through 9.")
     opt=input("Press y to continue: ")
 
-# Menu driven program to perform functions on a dictionary - Part 1
+# Menu driven program to perform functions on a dictionary
 d={}
 for i in range(n):
     itemname=input("Input item name: ")
