@@ -78,14 +78,14 @@ for i in d:
     print(str(i)+"'s highest mark is "+str(max(d[i])))
 
 # Create a dictionary with n train numbers as key and value is a list of all stops. Print the train numbers which has a stop at Chennai.
-n = int(input("How many trains? "))
-d = {}
+n=int(input("How many trains? "))
+d={}
 for i in range(n):
-    tn = int(input("Input the train number: "))
-    ns = int(input("Number of stops: "))
-    sl = []
+    tn=int(input("Input the train number: "))
+    ns=int(input("Number of stops: "))
+    sl=[]
     for j in range(ns):
-        stop = input("What is stop "+str(j+1)+"? ")
+        stop=input("What is stop "+str(j+1)+"? ")
         sl.append(stop)
     d[tn]=sl
 for i in d:
@@ -95,75 +95,75 @@ for i in d:
         pass
     
 # Create a dictionary with n items name as key and value will be a tuple with cp and sp and print the item name with maximum sp and minimum sp
-n = int(input("How many items? "))
-d = {}
+n=int(input("How many items? "))
+d={}
 for i in range(n):
-    item = input("Input name of item: ")
-    cp = eval(input("Cost Price: "))
-    sp = eval(input("Selling Price: "))
-    d[item] = (cp,sp)
-high = 0
-highn = ""
+    item=input("Input name of item: ")
+    cp=eval(input("Cost Price: "))
+    sp=eval(input("Selling Price: "))
+    d[item]=(cp,sp)
+high=0
+highn=""
 for j in d:
     if d[j][1]>high:
-        high = d[j][1]
-        highn = j
+        high=d[j][1]
+        highn=j
 print("Max selling price is:",high)
-low = d[item][1]
-lown = ""
+low=d[item][1]
+lown=""
 for k in d:
     if d[k][1]<low:
-        low = d[k][1]
-        lown = k
+        low=d[k][1]
+        lown=k
 print("Min selling price is:",low)
 
 # Create a dictionary with n students name as key and value is a list of 5 marks. Change the dictionary such that the value will be a list in ascending order
-Ds = {}
-n = int(input("How many students? "))
+Ds={}
+n=int(input("How many students? "))
 for i in range(n):
-    name = input("The name of student: ")
-    m1 = int(input("Marks of Subject 1: "))
-    m2 = int(input("Marks of Subject 2: "))
-    m3 = int(input("Marks of Subject 3: "))
-    m4 = int(input("Marks of Subject 4: "))
-    m5 = int(input("Marks of Subject 5: "))
-    Ds[name] = sorted([m1,m2,m3,m4,m5])
+    name=input("The name of student: ")
+    m1=int(input("Marks of Subject 1: "))
+    m2=int(input("Marks of Subject 2: "))
+    m3=int(input("Marks of Subject 3: "))
+    m4=int(input("Marks of Subject 4: "))
+    m5=int(input("Marks of Subject 5: "))
+    Ds[name]=sorted([m1,m2,m3,m4,m5])
 print(Ds)
 
 # Create a dictionary with exam number as key and value is another dictionary with name, class and gender and print key and values if class is 11.
-d = {}
+d={}
 for i in range(n):
-    examno = int(input("Exam number: "))
-    name = input("Name: ")
-    clas = int(input("Class: "))
-    gender = input("Gender: ")
-    d[examno] = {"Name":name,"Class":clas,"Gender":gender}
+    examno=int(input("Exam number: "))
+    name=input("Name: ")
+    clas=int(input("Class: "))
+    gender=input("Gender: ")
+    d[examno]={"Name":name,"Class":clas,"Gender":gender}
 for j in d:
     if d[j]["Class"]==11:
         print(str(j)+":"+str(d[j]))
         
 # Create a dictionary with key as exam no and value is a dictionary with name, mark which is a list of 5 marks. Print the roll no and name of the student getting rank 1
-Ds = {}
-n = int(input("How many students? "))
+Ds={}
+n=int(input("How many students? "))
 for i in range(n):
-    examno = int(input("The exam number of student "+str(i+1)+": "))
-    name = input("The name of student "+str(examno)+" : ")
-    m1 = int(input("Marks of Sbuject 1: "))
-    m2 = int(input("Marks of Sbuject 2: "))
-    m3 = int(input("Marks of Sbuject 3: "))
-    m4 = int(input("Marks of Sbuject 4: "))
-    m5 = int(input("Marks of Sbuject 5: "))
+    examno=int(input("The exam number of student "+str(i+1)+": "))
+    name=input("The name of student "+str(examno)+" : ")
+    m1=int(input("Marks of Sbuject 1: "))
+    m2=int(input("Marks of Sbuject 2: "))
+    m3=int(input("Marks of Sbuject 3: "))
+    m4=int(input("Marks of Sbuject 4: "))
+    m5=int(input("Marks of Sbuject 5: "))
     Ds[examno]=[name,[m1,m2,m3,m4,m5]]
 print(Ds)
 def avg(l):
-    av = sum(l)/len(l)
+    av=sum(l)/len(l)
     return av
-high = 0
-highn = ""
+high=0
+highn=""
 for k in Ds:
     if avg(Ds[k][1])>high:
-        high = avg(Ds[k][1])
-        highn = Ds[k][0]
+        high=avg(Ds[k][1])
+        highn=Ds[k][0]
     else:
         pass
 print()
@@ -172,9 +172,7 @@ print("Highest mark is",high,"held by",highn)
 # Voting details should be available in a dictionary in the format key will be roll number and value the name of student voted for and declare the winner.
 n = int(input("The number of students: "))
 print("Vote for student a or b or c: ")
-a = 0
-b = 0
-c = 0
+a,b,c=0,0,0
 for i in range(n):
     vote = input("The vote of student "+str(i+1)+": ")
     if vote == "a" or vote == "A":
